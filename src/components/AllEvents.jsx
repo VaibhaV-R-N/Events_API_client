@@ -25,7 +25,7 @@ export default function AllEvents() {
 
     if(events.isSuccess && images.isSuccess){
        
-        return <div className='w-full h-auto mt-5 flex flex-row items-center justify-start gap-5 p-2 flex-wrap '>
+        return <div className='w-full h-auto mt-5 flex flex-row items-center justify-center gap-5 p-2 flex-wrap '>
             {events.data.map((evnt,i)=>{
             return  <div onClick={()=>{ navigate(`/events/${evnt._id}?src=${encodeURIComponent(images.data[i].urls.regular)}`)}} className='cursor-pointer w-80 h-auto shadow-md shadow-black/70 rounded-md' key={evnt._id}>
             <img className='w-full h-40 object-cover rounded-tl-md rounded-tr-md'  src={images.data[i].urls.small} alt="" />

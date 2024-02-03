@@ -17,19 +17,19 @@ function App() {
         <NavBar/>
         <QueryClientProvider client={queryclient}>
           {pathname === '/'?<div className='mt-20 w-full h-screen flex flex-col items-center justify-center gap-10'>
-              <h2 className='text-yellow-400 text-3xl'>Welcome! 😊</h2>
-              <h3 className='text-red-400 text-2xl'> This is a client web app for interacting with Events-API !🚀</h3>
-              <p className='text-white w-2/3 text-xl text-wrap break-words'>
+              <h2 className='text-center text-yellow-400 text-3xl'>Welcome! 😊</h2>
+              <h3 className='text-center text-red-400 text-2xl'> This is a client web app for interacting with Events-API !🚀</h3>
+              <p className='text-center text-white w-2/3 text-xl text-wrap break-words'>
               User Authentication: Securely sign up, log in, and manage your account to participate in events.
               </p>
-              <p className='text-white w-2/3 text-xl text-wrap break-words'>
+              <p className='text-center text-white w-2/3 text-xl text-wrap break-words'>
               Event Management: Create, update, and delete events with detailed information such as date, time, location, and pricing.
               </p>
-              <p className='text-white w-2/3 text-xl text-wrap break-words'>
+              <p className='text-center text-white w-2/3 text-xl text-wrap break-words'>
               Ticketing System: Purchase and cancel tickets for your favorite events with ease.              </p>
-              <p className='text-white w-2/3 text-xl text-wrap break-words'>
+              <p className='text-center text-white w-2/3 text-xl text-wrap break-words'>
               User Interaction: Leave comments, rate events, and engage with the community.              </p>
-              <p className='text-white w-2/3 text-xl text-wrap break-words'>
+              <p className='text-center text-white w-2/3 text-xl text-wrap break-words'>
               User Profile: Update your profile details and inactivate your account if needed.              </p>
              </div>:null}
           <Outlet/> 
