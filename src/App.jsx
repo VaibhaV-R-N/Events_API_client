@@ -16,7 +16,7 @@ function App() {
         <Notification/>
         <NavBar/>
         <QueryClientProvider client={queryclient}>
-          {pathname === '/'?<div className='w-full h-screen flex flex-col items-center justify-center gap-10'>
+          {pathname === '/'?<div className='mt-20 w-full h-screen flex flex-col items-center justify-center gap-10'>
               <h2 className='text-yellow-400 text-3xl'>Welcome! 😊</h2>
               <h3 className='text-red-400 text-2xl'> This is a client web app for interacting with Events-API !🚀</h3>
               <p className='text-white w-2/3 text-xl text-wrap break-words'>
