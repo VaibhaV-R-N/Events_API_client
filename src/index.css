@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply w-full min-h-screen h-auto bg-neutral-950;
+}
+
+.input{
+    @apply w-full lg:w-2/3 h-16 bg-transparent border border-green-400 rounded-md text-white p-3 outline-none
+}
+
+.textarea{
+    @apply w-full lg:w-2/3 h-40 bg-transparent border border-green-400 rounded-md text-white p-3 outline-none resize-none
+}
+
+.active{
+    @apply text-yellow-400
+}
+
+.pending{
+    @apply text-black
+}
+
+
+.btn{
+    @apply border border-yellow-400 rounded-md text-white pl-3 pr-3 pt-2 pb-2 text-xl
+}
+
+
